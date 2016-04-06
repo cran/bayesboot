@@ -1,10 +1,10 @@
-7d2dabe9864cdb43bf5b144b49c79875 *DESCRIPTION
+8300ae9ef36cf308efdd2569974c898e *DESCRIPTION
 81c1cf8c252863e6a74be255cf8e4cac *LICENSE
 13182e670ef85ceef69e3211d34fb6b7 *NAMESPACE
-af2c6ef4313f29952e1e2c02a424eb99 *NEWS
+171d06dc3565c5c9bcf91e6212ce327a *NEWS
 b3ae9d8c3f1ba3435dd2571d6da81bf8 *R/bayesboot.R
 78744a0f08d0d6511af37574d467c370 *R/plotPost.R
-f33fcabe1811c85509cfbe8988bab0d0 *README.md
+1af7de18a7a5f93ade6fb2de585052f9 *README.md
 fab9ba9ac6de2b4dc66c09a56b6b8523 *man/as.bayesboot.Rd
 b8a4ab121734dcd1e4c73a753e36f20e *man/bayesboot.Rd
 668a6de0f2c2aa6840a3ed47605bd640 *man/figures/plotPost1.jpg
@@ -15,5 +15,5 @@ b6da9198009915e7f3497bed5a66c178 *man/plotPost.Rd
 27ec81e72e3a27d874163d2167185fac *man/rudirichlet.Rd
 0e33ae7225d4e599664f2e359035cddc *man/summary.bayesboot.Rd
 c552fb25c8b9c6205d71c852c3d05ee2 *tests/testthat.R
-783c660f26c7e80fb2ae82aa2ae6328a *tests/testthat/test-bayesboot-deterministic.R
+cc1f3bdfbeb9a33c9276d7a16eb92eda *tests/testthat/test-bayesboot-deterministic.R
 bb3a8ad13f4d8433242229a7d56d2fa4 *tests/testthat/test-bayesboot-non-deterministic.R

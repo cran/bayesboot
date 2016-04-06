@@ -3,12 +3,10 @@
 
 The `bayesboot` package implements a function `bayesboot` that performs the Bayesian bootstrap introduced by Rubin (1981). The implementation can both handle summary statistics that works on a weighted version of the data or that works on a resampled data set.
 
-`bayesboot` is not yet on CRAN but can be installed using [the devtools package](https://github.com/hadley/devtools):
+`bayesboot` is available on CRAN and can be installed in the usual way:
 
 ``` r
-# If you don't have devtools run this first: 
-# install.packages("devtools")
-devtools::install_github("rasmusab/bayesboot")
+install.packages("bayesboot")
 ```
 
 A simple example
@@ -45,7 +43,7 @@ summary(b1)
 plot(b1)
 ```
 
-![](README-president_summary-1.png)
+![](README-files/README-president_summary-1.png)<!-- -->
 
 While it is possible to use a summary statistic that works on a resample of the original data, it is more efficient if it's possible to use a summary statistic that works on a *reweighting* of the original dataset. Instead of using `mean` above it would be better to use `weighted.mean` like this:
 
@@ -82,7 +80,7 @@ b_diff <- as.bayesboot(b_presidents - b_opponents)
 plot(b_diff)
 ```
 
-![](README-height_comparison-1.png)
+![](README-files/README-height_comparison-1.png)<!-- -->
 
 So there is some evidence that loosing opponents could be shorter. (Though, I must add that it is quite unclear what the purpose really is with analyzing the heights of presidents and opponents...)
 
@@ -115,12 +113,12 @@ lines(cars$speed, colMeans(bb_loess, na.rm = TRUE), type ="l",
       col = "tomato", lwd = 4)
 ```
 
-![](README-car_plot-1.png)
+![](README-files/README-car_plot-1.png)<!-- -->
 
 More information
 ----------------
 
-For more information on the Bayesian bootstrap see [Rubin's (1981) original paper]((https://projecteuclid.org/euclid.aos/1176345338)) and my blog post [The Non-parametric Bootstrap as a Bayesian Model](http://sumsar.net/blog/2015/04/the-non-parametric-bootstrap-as-a-bayesian-model/). The implementation of `bayesboot` is similar to the function outlined in the blog post [Easy Bayesian Bootstrap in R](http://sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/), but the interface is slightly different.
+For more information on the Bayesian bootstrap see [Rubin's (1981) original paper](https://projecteuclid.org/euclid.aos/1176345338) and my blog post [The Non-parametric Bootstrap as a Bayesian Model](http://sumsar.net/blog/2015/04/the-non-parametric-bootstrap-as-a-bayesian-model/). The implementation of `bayesboot` is similar to the function outlined in the blog post [Easy Bayesian Bootstrap in R](http://sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/), but the interface is slightly different.
 
 References
 ----------
